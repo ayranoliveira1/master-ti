@@ -1,7 +1,7 @@
 import { Instagram } from "lucide-react";
 import Image from "next/image";
 import { FaCircle, FaInstagram, FaMailBulk, FaWhatsapp } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdOutlineMail } from "react-icons/md";
 
 const Header = () => {
    return (
@@ -48,7 +48,7 @@ const Header = () => {
             </div>
 
             <div className="bg-[#292734] text-white p-2 rounded-full shadow-lg cursor-pointer hover:scale-110">
-               <MdEmail size={22} />
+               <MdOutlineMail size={24} />
             </div>
          </div>
       </header>
