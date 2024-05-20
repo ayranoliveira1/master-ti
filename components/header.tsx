@@ -1,7 +1,9 @@
-import { Instagram } from "lucide-react";
+"use client";
+
 import Image from "next/image";
-import { FaCircle, FaInstagram, FaMailBulk, FaWhatsapp } from "react-icons/fa";
-import { MdEmail, MdOutlineMail } from "react-icons/md";
+import Link from "next/link";
+import { FaCircle, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 const Header = () => {
    return (
@@ -39,17 +41,31 @@ const Header = () => {
                <FaCircle /> 100% online
             </div>
 
-            <div className="bg-[#292734] text-white p-2 rounded-full shadow-lg cursor-pointer hover:scale-110">
-               <FaWhatsapp size={22} />
-            </div>
+            <Link
+               href={
+                  "https://api.whatsapp.com/send?phone=+55(91)982534512&text=Olá%2C+gostaria+de+conhecer+mais+o+trabalho+de+sites+de+vocês!"
+               }
+               target="_blank"
+            >
+               <div className="bg-[#292734] text-white p-2 rounded-full shadow-lg cursor-pointer hover:scale-110">
+                  <FaWhatsapp size={22} />
+               </div>
+            </Link>
 
-            <div className="bg-[#292734] text-white p-2 rounded-full shadow-lg cursor-pointer hover:scale-110">
-               <FaInstagram size={22} />
-            </div>
+            <Link
+               href={"https://www.instagram.com/master.tii/"}
+               target="_blank"
+            >
+               <div className="bg-[#292734] text-white p-2 rounded-full shadow-lg cursor-pointer hover:scale-110">
+                  <FaInstagram size={22} />
+               </div>
+            </Link>
 
-            <div className="bg-[#292734] text-white p-2 rounded-full shadow-lg cursor-pointer hover:scale-110">
-               <MdOutlineMail size={24} />
-            </div>
+            <Link href={"mailto:mastertibr091@gmail.com"} target="_blank">
+               <div className="bg-[#292734] text-white p-2 rounded-full shadow-lg cursor-pointer hover:scale-110">
+                  <MdOutlineMail size={24} />
+               </div>
+            </Link>
          </div>
       </header>
    );
