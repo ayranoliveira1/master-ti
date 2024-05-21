@@ -1,6 +1,7 @@
+import CardDesigner from "@/components/card-designer";
+import CardSites from "@/components/card-site";
 import Header from "@/components/header";
 import Start from "@/components/start";
-import Works from "@/components/works";
 
 export default function Home() {
    return (
@@ -14,7 +15,11 @@ export default function Home() {
          </div>
 
          <div id="works" className="py-14 container px-20">
-            <Works />
+            <CardSites />
+         </div>
+
+         <div className="py-14 container px-20">
+            <CardDesigner />
          </div>
       </>
    );
