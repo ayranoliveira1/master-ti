@@ -1,5 +1,6 @@
 import CardDesigner from "@/components/card-designer";
 import CardSites from "@/components/card-site";
+import Contacts from "@/components/contacts";
 import Header from "@/components/header";
 import Questions from "@/components/questions";
 import Start from "@/components/start";
@@ -25,6 +26,10 @@ export default function Home() {
 
          <div id="questions" className="py-14 container px-20">
             <Questions />
+         </div>
+
+         <div id="questions" className="py-14 container px-20">
+            <Contacts />
          </div>
       </>
    );
