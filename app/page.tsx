@@ -1,6 +1,7 @@
 import CardDesigner from "@/components/card-designer";
 import CardSites from "@/components/card-site";
 import Header from "@/components/header";
+import Questions from "@/components/questions";
 import Start from "@/components/start";
 
 export default function Home() {
@@ -20,6 +21,10 @@ export default function Home() {
 
          <div className="py-14 container px-20">
             <CardDesigner />
+         </div>
+
+         <div id="questions" className="py-14 container px-20">
+            <Questions />
          </div>
       </>
    );

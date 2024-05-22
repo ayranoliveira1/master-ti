@@ -16,7 +16,7 @@ const CardDesigner = () => {
    const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
 
    return (
-      <div className="flex flex-col items-center gap-5 ">
+      <div className="flex flex-col items-center gap-5">
          <h1 className="text-white text-3xl mb-10">Designers Desenvolvidos</h1>
 
          <Carousel plugins={[plugin.current]}>
