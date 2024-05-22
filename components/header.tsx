@@ -25,17 +25,24 @@ const Header = () => {
             <button className="hover:bg-black px-3 py-1 rounded-full">
                Inicio
             </button>
+
             <Link href={"#works"}>
                <button className="hover:bg-black px-3 py-1 rounded-full">
                   Trabalhos
                </button>
             </Link>
-            <button className="hover:bg-black px-3 py-1 rounded-full">
-               Duvidas
-            </button>
-            <button className="hover:bg-black px-3 py-1 rounded-full">
-               Contatos
-            </button>
+
+            <Link href={"#questions"}>
+               <button className="hover:bg-black px-3 py-1 rounded-full">
+                  Duvidas
+               </button>
+            </Link>
+
+            <Link href={"#contacts"}>
+               <button className="hover:bg-black px-3 py-1 rounded-full">
+                  Contatos
+               </button>
+            </Link>
          </div>
 
          <div className="flex gap-3 items-center">
