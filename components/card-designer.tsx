@@ -20,7 +20,7 @@ const CardDesigner = () => {
          <h1 className="text-white text-3xl mb-10">Designers Desenvolvidos</h1>
 
          <Carousel plugins={[plugin.current]}>
-            <CarouselContent>
+            <CarouselContent className="w-[800px]">
                {designers.map((designer) => (
                   <CarouselItem
                      key={designer.Image}
