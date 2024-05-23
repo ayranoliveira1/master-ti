@@ -44,11 +44,12 @@ const Questions = () => {
                   </AccordionTrigger>
                   <AccordionContent className="px-4 border-t">
                      <p className="pt-3">
-                        Presença online: Ter um website permite que o seu
-                        negócio esteja presente online, onde seus clientes em
-                        potencial podem encontrá-lo a qualquer momento,
-                        independentemente da localização geográfica ou do fuso
-                        horário.
+                        O custo para desenvolver um website pode variar
+                        amplamente, de $500 a mais de $2000, dependendo de
+                        fatores como o tipo de website (básico, empresarial,
+                        e-commerce, personalizado), a complexidade das
+                        funcionalidades, o design e a personalização
+                        necessários.
                      </p>
                   </AccordionContent>
                </AccordionItem>
@@ -62,11 +63,8 @@ const Questions = () => {
                   </AccordionTrigger>
                   <AccordionContent className="px-4 border-t">
                      <p className="pt-3">
-                        Presença online: Ter um website permite que o seu
-                        negócio esteja presente online, onde seus clientes em
-                        potencial podem encontrá-lo a qualquer momento,
-                        independentemente da localização geográfica ou do fuso
-                        horário.
+                        Não é necessário ter conhecimento técnico avançado para
+                        manter um website
                      </p>
                   </AccordionContent>
                </AccordionItem>
@@ -79,11 +77,11 @@ const Questions = () => {
                   </AccordionTrigger>
                   <AccordionContent className="px-4 border-t">
                      <p className="pt-3">
-                        Presença online: Ter um website permite que o seu
-                        negócio esteja presente online, onde seus clientes em
-                        potencial podem encontrá-lo a qualquer momento,
-                        independentemente da localização geográfica ou do fuso
-                        horário.
+                        Sim, seu website precisará de manutenção regular para
+                        garantir segurança, desempenho e atualizações de
+                        conteúdo. Isso inclui atualizações de software, backups,
+                        correções de segurança e ajustes no design e
+                        funcionalidades conforme necessário.
                      </p>
                   </AccordionContent>
                </AccordionItem>
