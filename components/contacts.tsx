@@ -1,3 +1,5 @@
+"use client";
+
 import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "./ui/button";
 import { MdOutlineMail, MdOutlineTimer } from "react-icons/md";
@@ -26,7 +28,7 @@ const Contacts = () => {
                </span>
                <span className="text-sm flex items-center gap-3">
                   <MdOutlineMail size={25} />
-                  CONTATO: mastertibr-091@gmail.com
+                  CONTATO: mastertibr091@gmail.com
                </span>
                <Link
                   href={
@@ -52,26 +54,53 @@ const Contacts = () => {
                   respondemos em menos de 24 horas!
                </p>
 
-               <div className="flex flex-col gap-3 mt-3">
+               <form
+                  action={"https://formsubmit.co/mastertibr091@gmail.com"}
+                  className="flex flex-col gap-3 mt-3"
+                  method="POST"
+               >
                   <Input
                      className="bg-[#3B3B3B] border-[#292734] text-white"
-                     placeholder="mastertibr-091@gmail.com"
+                     placeholder="Digite seu nome..."
+                     name="name"
+                     required
                   />
 
                   <Input
                      className="bg-[#3B3B3B] border-[#292734] text-white"
                      placeholder="Digite seu Email..."
+                     name="email"
+                     required
                   />
 
                   <Textarea
                      className="bg-[#3B3B3B] border-[#292734] text-white"
                      placeholder="Escreva sua Mensagem..."
+                     name="message"
+                     required
                   />
 
-                  <Button className="bg-[#292734] border-[#292734] text-white">
+                  <Button
+                     type="submit"
+                     className="bg-[#292734] border-[#292734] text-white"
+                  >
                      Enviar
                   </Button>
-               </div>
+
+                  <input
+                     className="hidden"
+                     type="text"
+                     name="_subject"
+                     value="new contact!"
+                     onChange={(e) => console.log(e.target.value)}
+                  />
+                  <input
+                     type="text"
+                     name="_honey"
+                     style={{ display: "none" }}
+                  />
+                  <input className="hidden" type="text" name="_captcha" />
+               </form>
             </div>
             <div></div>
          </div>
