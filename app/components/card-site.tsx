@@ -17,12 +17,15 @@ const CardSites = () => {
 
    return (
       <div className="flex flex-col items-center gap-5 justify-center">
-         <h1 className="text-white text-3xl mb-10">Sites Desenvolvidos</h1>
+         <h1 className="text-4xl font-semibold mb-10">Sites Desenvolvidos</h1>
 
-         <Carousel plugins={[plugin.current]}>
-            <CarouselContent>
+         <Carousel plugins={[plugin.current]} className="w-full">
+            <CarouselContent className="gap-5">
                {sites.map((site) => (
-                  <CarouselItem key={site.name} className="max-h-[480px]">
+                  <CarouselItem
+                     key={site.name}
+                     className="max-h-[500px] basis-1/2"
+                  >
                      <CardItem
                         name={site.name}
                         Imagem={site.Image}
@@ -31,8 +34,6 @@ const CardSites = () => {
                   </CarouselItem>
                ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
          </Carousel>
       </div>
    );

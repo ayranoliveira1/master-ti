@@ -8,15 +8,15 @@ import Start from "@/app/components/start";
 export default function Home() {
    return (
       <>
-         <div className="py-5 container mx-auto">
+         <div className="py-5 w-full fixed top-0 px-40 bg-white z-50 border-b border[0.2px]">
             <Header />
          </div>
 
-         <div className="py-10 container px-20">
+         <div className="pb-10 pt-48 container px-20">
             <Start />
          </div>
 
-         <div id="works" className="py-14 container px-20">
+         <div id="works" className="py-14 container mx-auto">
             <CardSites />
          </div>
 
