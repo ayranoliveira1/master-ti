@@ -10,16 +10,16 @@ import Image from "next/image";
 const Questions = () => {
    return (
       <div className="flex flex-col items-center gap-14">
-         <h1 className="text-white text-3xl">Dúvidas frequentes</h1>
+         <h1 className="text-4xl font-semibold">Dúvidas frequentes</h1>
 
          <div className="relative">
             <Accordion
                type="single"
                collapsible
-               className="text-white w-[650px] bg-[#292734] z-50"
+               className="text-white w-[650px] bg-black z-50"
             >
                <AccordionItem value="item-1">
-                  <AccordionTrigger className="px-2 text-lg">
+                  <AccordionTrigger className="px-2 py-5 text-2xl">
                      <div className="flex gap-3 items-center">
                         <FaCircle size={10} />
                         Por que eu vou querer um website?
@@ -36,7 +36,7 @@ const Questions = () => {
                   </AccordionContent>
                </AccordionItem>
                <AccordionItem value="item-2">
-                  <AccordionTrigger className="px-2 text-lg">
+                  <AccordionTrigger className="px-2 py-5 text-2xl">
                      <div className="flex gap-3 items-center">
                         <FaCircle size={10} />
                         Quanto custa para desenvolver um website?
@@ -54,7 +54,7 @@ const Questions = () => {
                   </AccordionContent>
                </AccordionItem>
                <AccordionItem value="item-3">
-                  <AccordionTrigger className="px-2 text-lg text-start">
+                  <AccordionTrigger className="px-2 py-5 text-2xl text-start">
                      <div className="flex gap-3 items-center">
                         <FaCircle size={10} />
                         Eu preciso ter conhecimento técnico para <br /> manter
@@ -69,7 +69,7 @@ const Questions = () => {
                   </AccordionContent>
                </AccordionItem>
                <AccordionItem value="item-4">
-                  <AccordionTrigger className="px-2 text-lg">
+                  <AccordionTrigger className="px-2 py-5 text-2xl">
                      <div className="flex gap-3 items-center">
                         <FaCircle size={10} />
                         Meu website precisará de manutenção regular?

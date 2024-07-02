@@ -24,7 +24,7 @@ export default function Home() {
             <CardDesigner />
          </div>
 
-         <div id="questions" className="py-14 container px-20">
+         <div id="questions" className="py-14 container mx-auto">
             <Questions />
          </div>
 
