@@ -8,7 +8,7 @@ import Start from "@/components/start";
 export default function Home() {
    return (
       <>
-         <div className="py-5 container px-20">
+         <div className="py-5 container mx-auto">
             <Header />
          </div>
 

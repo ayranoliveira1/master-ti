@@ -71,6 +71,6 @@
       @apply border-border;
    }
    body {
-      @apply bg-[#023059] text-foreground;
+      @apply bg-white text-foreground;
    }
 }
