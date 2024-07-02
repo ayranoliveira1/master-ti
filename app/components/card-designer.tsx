@@ -11,33 +11,34 @@ import {
 import { useRef } from "react";
 import designers from "@/app/lib/designers";
 import Image from "next/image";
+import { tree } from "next/dist/build/templates/app-page";
 
 const CardDesigner = () => {
-   const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
+   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
 
    return (
       <div className="flex flex-col items-center gap-5">
-         <h1 className="text-white text-3xl mb-10">Designers Desenvolvidos</h1>
+         <h1 className="text-4xl font-semibold mb-10">
+            Designers Desenvolvidos
+         </h1>
 
          <Carousel plugins={[plugin.current]}>
-            <CarouselContent className="w-[800px]">
+            <CarouselContent className="">
                {designers.map((designer) => (
                   <CarouselItem
                      key={designer.Image}
-                     className="flex justify-center"
+                     className="flex flex-col justify-center basis-1/3"
                   >
                      <Image
                         src={designer.Image}
                         alt="Barber Shop"
-                        width={400}
-                        height={400}
+                        width={300}
+                        height={500}
                         className="object-cover"
                      />
                   </CarouselItem>
                ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
          </Carousel>
       </div>
    );

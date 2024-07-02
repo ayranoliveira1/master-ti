@@ -20,7 +20,7 @@ export default function Home() {
             <CardSites />
          </div>
 
-         <div className="py-14 container px-20">
+         <div className="py-14 container mx-auto">
             <CardDesigner />
          </div>
 
