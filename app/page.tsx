@@ -1,9 +1,9 @@
-import CardDesigner from "@/components/card-designer";
-import CardSites from "@/components/card-site";
-import Contacts from "@/components/contacts";
-import Header from "@/components/header";
-import Questions from "@/components/questions";
-import Start from "@/components/start";
+import CardDesigner from "@/app/components/card-designer";
+import CardSites from "@/app/components/card-site";
+import Contacts from "@/app/components/contacts";
+import Header from "@/app/components/header";
+import Questions from "@/app/components/questions";
+import Start from "@/app/components/start";
 
 export default function Home() {
    return (

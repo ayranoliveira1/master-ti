@@ -9,7 +9,7 @@ import {
    CarouselPrevious,
 } from "./ui/carousel";
 import { useRef } from "react";
-import designers from "@/lib/designers";
+import designers from "@/app/lib/designers";
 import Image from "next/image";
 
 const CardDesigner = () => {
