@@ -28,7 +28,7 @@ export default function Home() {
             <Questions />
          </div>
 
-         <div id="contacts" className="py-14 container px-20">
+         <div id="contacts" className="py-14 container mx-auto">
             <Contacts />
          </div>
       </>

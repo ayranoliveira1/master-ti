@@ -11,13 +11,11 @@ import { Textarea } from "./ui/textarea";
 const Contacts = () => {
    return (
       <div className="flex flex-col items-center gap-10">
-         <h1 className="text-white text-3xl">Contatos</h1>
+         <h1 className="text-4xl font-semibold">Contatos</h1>
 
          <div className="flex jsustify-center">
-            <div className="flex flex-col text-white gap-3 mr-20">
-               <h1 className="text-white text-3xl mb-2 font-semibold">
-                  Fale Conosco!
-               </h1>
+            <div className="flex flex-col gap-3 mr-20">
+               <h1 className=" text-3xl mb-2 font-medium">Fale Conosco!</h1>
                <span className="flex items-center gap-3 text-sm">
                   <MdOutlineTimer size={25} />
                   8:00 AM - 18:00 PM
@@ -36,7 +34,7 @@ const Contacts = () => {
                   }
                   target="_blank"
                >
-                  <Button className="flex items-center gap-1 w-fit rounded-3xl text-sm bg-[#292734]">
+                  <Button className="flex items-center gap-1 w-fit rounded-3xl text-sm bg-black">
                      <FaWhatsapp size={15} />
                      Quero fazer meu site
                   </Button>
@@ -44,7 +42,7 @@ const Contacts = () => {
             </div>
 
             <div className="flex flex-col gap-1">
-               <h1 className="text-white text-3xl font-semibold">
+               <h1 className="text-3xl font-medium">
                   Mande um E-mail <br /> Para Nossa Equipe!
                </h1>
 
@@ -56,25 +54,25 @@ const Contacts = () => {
 
                <form
                   action={"https://formsubmit.co/mastertibr091@gmail.com"}
-                  className="flex flex-col gap-3 mt-3"
                   method="POST"
+                  className="flex flex-col gap-3 mt-3"
                >
                   <Input
-                     className="bg-[#3B3B3B] border-[#292734] text-white"
+                     className="bg-black border-[#292734] text-white"
                      placeholder="Digite seu nome..."
                      name="name"
                      required
                   />
 
                   <Input
-                     className="bg-[#3B3B3B] border-[#292734] text-white"
+                     className="bg-black border-[#292734] text-white"
                      placeholder="Digite seu Email..."
                      name="email"
                      required
                   />
 
                   <Textarea
-                     className="bg-[#3B3B3B] border-[#292734] text-white"
+                     className="bg-black border-[#292734] text-white"
                      placeholder="Escreva sua Mensagem..."
                      name="message"
                      required
@@ -82,7 +80,7 @@ const Contacts = () => {
 
                   <Button
                      type="submit"
-                     className="bg-[#292734] border-[#292734] text-white"
+                     className="bg-black border-[#292734] text-white"
                   >
                      Enviar
                   </Button>
