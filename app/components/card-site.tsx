@@ -1,13 +1,7 @@
 "use client";
 
 import Autoplay from "embla-carousel-autoplay";
-import {
-   Carousel,
-   CarouselContent,
-   CarouselItem,
-   CarouselNext,
-   CarouselPrevious,
-} from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import CardItem from "./card-Item";
 import sites from "../lib/sites";
 import { useRef } from "react";
@@ -17,7 +11,9 @@ const CardSites = () => {
 
    return (
       <div className="flex flex-col items-center gap-5 justify-center">
-         <h1 className="text-4xl font-semibold mb-10">Sites Desenvolvidos</h1>
+         <h1 className="lg:text-4xl text-xl font-semibold mb-10">
+            Sites Desenvolvidos
+         </h1>
 
          <Carousel plugins={[plugin.current]} className="w-full">
             <CarouselContent className="gap-5">
