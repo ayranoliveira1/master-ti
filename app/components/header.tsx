@@ -3,12 +3,64 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaCircle, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { IoMenuSharp } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const Header = () => {
    return (
       <header className="flex justify-between items-center">
-         <div className="flex gap-5 items-center">
+         {/* Mobile */}
+         <div className="flex lg:hidden gap-5 items-center">
+            <Image
+               src={"/LogoMaster.png"}
+               alt="Logo"
+               width={50}
+               height={50}
+               className="object-cotain"
+            />
+            <p className="font-bold text-xs">
+               Transformando <br /> Seu Negocio!
+            </p>
+         </div>
+
+         <div className="lg:hidden">
+            <Sheet>
+               <SheetTrigger>
+                  <IoMenuSharp size={25} />
+               </SheetTrigger>
+
+               <SheetContent>
+                  <div className="flex flex-col gap-2 font-medium items-end py-1">
+                     <button className="text-lg px-3 py-1 rounded-full">
+                        Inicio
+                     </button>
+
+                     <Link href={"#works"}>
+                        <button className="text-lg px-3 py-1 rounded-full">
+                           Trabalhos
+                        </button>
+                     </Link>
+
+                     <Link href={"#questions"}>
+                        <button className="text-lg px-3 py-1 rounded-full">
+                           Dúvidas
+                        </button>
+                     </Link>
+
+                     <Link href={"#contacts"}>
+                        <button className="text-lg px-3 py-1 rounded-full">
+                           Contatos
+                        </button>
+                     </Link>
+                  </div>
+               </SheetContent>
+            </Sheet>
+         </div>
+
+         {/* Desktop */}
+
+         <div className="hidden lg:flex gap-5 items-center">
             <Image
                src={"/LogoMaster.png"}
                alt="Logo"
@@ -21,7 +73,7 @@ const Header = () => {
             </p>
          </div>
 
-         <div className="flex gap-2 font-medium px-5 py-1 ">
+         <div className="hidden lg:flex gap-2 font-medium px-5 py-1 ">
             <button className="hover:underline text-lg px-3 py-1 rounded-full">
                Inicio
             </button>
@@ -45,7 +97,7 @@ const Header = () => {
             </Link>
          </div>
 
-         <div className="flex gap-2 items-center">
+         <div className="hidden lg:flex gap-2 items-center">
             <div className="flex gap-1 items-center text-[#1FC704]">
                <FaCircle /> 100% online
             </div>
