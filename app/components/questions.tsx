@@ -18,10 +18,10 @@ const Questions = () => {
             <Accordion
                type="single"
                collapsible
-               className="text-white w-[390px] lg:w-[650px] bg-black z-50"
+               className="text-white w-[340px] lg:w-[650px] bg-black z-50"
             >
                <AccordionItem value="item-1">
-                  <AccordionTrigger className="px-2 py-5 text-sm lg:text-2xl">
+                  <AccordionTrigger className="px-2 lg:py-5 text-sm lg:text-2xl">
                      <div className="flex gap-3 items-center text-start">
                         <FaCircle size={10} />
                         Por que eu vou querer um website?
@@ -38,7 +38,7 @@ const Questions = () => {
                   </AccordionContent>
                </AccordionItem>
                <AccordionItem value="item-2">
-                  <AccordionTrigger className="px-2 py-5 text-sm lg:text-2xl">
+                  <AccordionTrigger className="px-2 lg:py-5 text-sm lg:text-2xl">
                      <div className="flex gap-3 items-center text-start">
                         <FaCircle size={10} />
                         Quanto custa para desenvolver um website?
@@ -56,7 +56,7 @@ const Questions = () => {
                   </AccordionContent>
                </AccordionItem>
                <AccordionItem value="item-3">
-                  <AccordionTrigger className="px-2 py-5 text-sm lg:text-2xl text-start">
+                  <AccordionTrigger className="px-2 lg:py-5 text-sm lg:text-2xl text-start">
                      <div className="flex gap-3 items-center text-start">
                         <FaCircle size={10} />
                         Eu preciso ter conhecimento técnico para <br /> manter
@@ -71,7 +71,7 @@ const Questions = () => {
                   </AccordionContent>
                </AccordionItem>
                <AccordionItem value="item-4">
-                  <AccordionTrigger className="px-2 py-5 text-sm lg:text-2xl">
+                  <AccordionTrigger className="px-2 lg:py-5 text-sm lg:text-2xl">
                      <div className="flex gap-3 items-center text-start">
                         <FaCircle size={10} />
                         Meu website precisará de manutenção regular?
@@ -94,7 +94,7 @@ const Questions = () => {
                width={200}
                height={200}
                alt="questions"
-               className="absolute right-[-59px] top-[-180px]"
+               className="absolute right-[-59px] top-[-180px] hidden lg:block"
             />
          </div>
       </div>
