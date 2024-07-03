@@ -18,7 +18,7 @@ const CardDesigner = () => {
 
    return (
       <div className="flex flex-col items-center gap-5">
-         <h1 className="text-4xl font-semibold mb-10">
+         <h1 className="lg:text-4xl text-xl font-semibold mb-10">
             Designers Desenvolvidos
          </h1>
 
