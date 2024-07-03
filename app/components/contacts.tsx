@@ -11,20 +11,22 @@ import { Textarea } from "./ui/textarea";
 const Contacts = () => {
    return (
       <div className="flex flex-col items-center gap-10">
-         <h1 className="text-4xl font-semibold">Contatos</h1>
+         <h1 className="lg:text-4xl text-xl font-semibold">Contatos</h1>
 
-         <div className="flex jsustify-center">
-            <div className="flex flex-col gap-3 mr-20">
-               <h1 className=" text-3xl mb-2 font-medium">Fale Conosco!</h1>
-               <span className="flex items-center gap-3 text-sm">
+         <div className="flex lg:flex-row flex-col gap-5 lg-gap-0 justify-center">
+            <div className="flex flex-col gap-3 mx-auto lg:mx-0 lg:mr-20">
+               <h1 className="text-base lg:text-3xl mb-2 font-medium">
+                  Fale Conosco!
+               </h1>
+               <span className="flex items-center gap-3 lg:text-sm text-xs">
                   <MdOutlineTimer size={25} />
                   8:00 AM - 18:00 PM
                </span>
-               <span className="text-sm flex items-center gap-3">
+               <span className="lg:text-sm text-xs flex items-center gap-3">
                   <FiPhone size={25} />
                   (91) 98543-4512
                </span>
-               <span className="text-sm flex items-center gap-3">
+               <span className="lg:text-sm text-xs flex items-center gap-3">
                   <MdOutlineMail size={25} />
                   CONTATO: mastertibr091@gmail.com
                </span>
@@ -34,19 +36,19 @@ const Contacts = () => {
                   }
                   target="_blank"
                >
-                  <Button className="flex items-center gap-1 w-fit rounded-3xl text-sm bg-black">
+                  <Button className="flex items-center gap-1 w-fit rounded-3xl lg:text-sm text-xs bg-black">
                      <FaWhatsapp size={15} />
                      Quero fazer meu site
                   </Button>
                </Link>
             </div>
 
-            <div className="flex flex-col gap-1">
-               <h1 className="text-3xl font-medium">
+            <div className="flex flex-col gap-1 mx-auto mr-7 lg:mr-0 lg:mx-0">
+               <h1 className="lg:text-3xl text-base font-medium">
                   Mande um E-mail <br /> Para Nossa Equipe!
                </h1>
 
-               <p className="text-gray-400 text-sm">
+               <p className="text-gray-400 text-xs lg:text-sm">
                   Ajude nossa equipe a melhorar br o <br /> feedback, mande seu
                   e-mail para ser <br /> melhor atendido da melhor forma, <br />
                   respondemos em menos de 24 horas!
