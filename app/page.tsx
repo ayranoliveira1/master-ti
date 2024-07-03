@@ -8,11 +8,11 @@ import Start from "@/app/components/start";
 export default function Home() {
    return (
       <>
-         <div className="py-5 w-full fixed top-0 px-40 bg-white z-50 border-b border[0.2px]">
+         <div className="py-5 w-full lg:fixed top-0 px-8 lg:px-40 bg-white z-50 border-b border[0.2px]">
             <Header />
          </div>
 
-         <div className="pb-10 pt-48 container px-20">
+         <div className="pb-10 pt-10 lg:pt-48 container px-1 lg:px-20">
             <Start />
          </div>
 

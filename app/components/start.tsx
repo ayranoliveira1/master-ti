@@ -12,19 +12,38 @@ const Start = () => {
             <Image
                src={"/main.png"}
                alt="Logo"
-               width={210}
-               height={210}
-               className="object-cotain"
+               width={150}
+               height={150}
+               className="object-cotain lg:hidden"
             />
 
-            <h1 className="text-white font-medium bg-black text-3xl px-5 py-8 rounded-2xl">
+            <Image
+               src={"/main.png"}
+               alt="Logo"
+               width={210}
+               height={210}
+               className="object-cotain hidden lg:block"
+            />
+
+            <h1 className="text-white font-medium bg-black text-sm lg:text-3xl px-5 py-8 rounded-2xl">
                Melhor Empresa de Desenvolvimento de Sites <br /> e Soluções Para
                Seu Negocio Local & Online!
             </h1>
          </div>
 
          <div className="flex flex-col gap-2">
-            <p className="text-md font-medium">
+            {/* Mobile */}
+            <p className="lg:hidden text-xs px-10 font-medium">
+               Dois amigos apaixonados por design e programação unem forças em
+               2024 para fundar a Master TI, uma empresa especializada em criar
+               sites personalizados. Com uma abordagem artesanal e
+               comprometimento, eles ganham reconhecimento por seu trabalho de
+               qualidade, ajudando clientes a prosperar no mundo digital em
+               constante evolução.
+            </p>
+
+            {/* Desktop */}
+            <p className="hidden lg:block text-md font-medium">
                Dois amigos apaixonados por design e programação unem forças em
                2024 para <br /> fundar a Master TI, uma empresa especializada em
                criar sites personalizados. <br /> Com uma abordagem artesanal e
@@ -41,7 +60,7 @@ const Start = () => {
                target="_blank"
                className="mx-auto"
             >
-               <Button className="bg-black rounded-2xl text-sm w-fit">
+               <Button className="bg-black rounded-2xl text-xs lg:text-sm w-fit">
                   Consulte Mais Informações{" "}
                   <FaWhatsapp size={24} className="pl-2" />
                </Button>
