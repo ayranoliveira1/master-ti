@@ -11,7 +11,7 @@ const CardSites = () => {
 
    return (
       <div className="flex flex-col items-center gap-5 justify-center">
-         <h1 className="lg:text-4xl text-xl font-semibold mb-10">
+         <h1 className="lg:text-4xl text-xl font-bold lg:font-semibold mb-10">
             Sites Desenvolvidos
          </h1>
 

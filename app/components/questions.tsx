@@ -10,7 +10,7 @@ import Image from "next/image";
 const Questions = () => {
    return (
       <div className="flex flex-col items-center gap-14">
-         <h1 className="text-xl lg:text-4xl font-semibold">
+         <h1 className="text-xl lg:text-4xl font-bold lg:font-semibold">
             Dúvidas frequentes
          </h1>
 
