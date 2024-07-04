@@ -8,7 +8,7 @@ import Link from "next/link";
 const Start = () => {
    return (
       <div className="flex justify-center items-center flex-col gap-2">
-         <div className="flex flex-col items-center px-5">
+         <div className="flex flex-col items-center">
             <Image
                src={"/main.png"}
                alt="Logo"
