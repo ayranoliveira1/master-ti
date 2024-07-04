@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaCircle, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoMenuSharp } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const Header = () => {
    return (
@@ -26,32 +26,34 @@ const Header = () => {
 
          <div className="lg:hidden">
             <Sheet>
-               <SheetTrigger>
+               <SheetTrigger asChild>
                   <IoMenuSharp size={25} />
                </SheetTrigger>
 
                <SheetContent>
-                  <div className="flex flex-col gap-2 font-medium items-end py-1">
-                     <button className="text-lg px-3 py-1 rounded-full">
-                        Inicio
-                     </button>
+                  <div className="flex flex-col gap-2 font-medium items-end py-4 w-full">
+                     <Link href={"/"} className="w-full">
+                        <SheetClose className="text-lg py-1 border hover:bg-[#e9e7e7] border-[#dbdada] w-full text-start px-5">
+                           Inicio
+                        </SheetClose>
+                     </Link>
 
-                     <Link href={"#works"}>
-                        <button className="text-lg px-3 py-1 rounded-full">
+                     <Link href={"#works"} className="w-full">
+                        <SheetClose className="text-lg py-1 border hover:bg-[#e9e7e7] border-[#dbdada] w-full text-start px-5">
                            Trabalhos
-                        </button>
+                        </SheetClose>
                      </Link>
 
-                     <Link href={"#questions"}>
-                        <button className="text-lg px-3 py-1 rounded-full">
+                     <Link href={"#questions"} className="w-full">
+                        <SheetClose className="text-lg py-1 border hover:bg-[#e9e7e7] border-[#dbdada] w-full text-start px-5">
                            Dúvidas
-                        </button>
+                        </SheetClose>
                      </Link>
 
-                     <Link href={"#contacts"}>
-                        <button className="text-lg px-3 py-1 rounded-full">
+                     <Link href={"#contacts"} className="w-full">
+                        <SheetClose className="text-lg py-1 border hover:bg-[#e9e7e7] border-[#dbdada] w-full text-start px-5">
                            Contatos
-                        </button>
+                        </SheetClose>
                      </Link>
                   </div>
                </SheetContent>
