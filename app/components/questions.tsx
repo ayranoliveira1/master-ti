@@ -59,8 +59,14 @@ const Questions = () => {
                   <AccordionTrigger className="px-2 lg:py-5 text-sm lg:text-2xl text-start">
                      <div className="flex gap-3 items-center text-start">
                         <FaCircle size={10} />
-                        Eu preciso ter conhecimento técnico para <br /> manter
-                        meu website?
+                        <p className="lg:hidden">
+                           Eu preciso ter conhecimento técnico para manter meu
+                           website?
+                        </p>
+                        <p className="hidden lg:block">
+                           Eu preciso ter conhecimento técnico para <br />
+                           manter meu website?
+                        </p>
                      </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-4 border-t">
