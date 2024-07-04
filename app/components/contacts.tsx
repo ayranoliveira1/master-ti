@@ -10,12 +10,12 @@ import { Textarea } from "./ui/textarea";
 
 const Contacts = () => {
    return (
-      <div className="flex flex-col items-center gap-10">
+      <div className="flex flex-col items-center gap-5 lg:gap-10">
          <h1 className="lg:text-4xl text-xl font-semibold">Contatos</h1>
 
-         <div className="flex lg:flex-row flex-col gap-5 lg-gap-0 justify-center">
-            <div className="flex flex-col gap-3 mx-auto lg:mx-0 lg:mr-20 items-center">
-               <h1 className="text-base lg:text-3xl mb-2 font-medium">
+         <div className="flex lg:flex-row flex-col gap-7 lg:gap-5 lg-gap-0 justify-center">
+            <div className="flex flex-col gap-1 lg:gap-3 mx-auto lg:mx-0 lg:mr-20 items-center">
+               <h1 className="text-base lg:text-3xl lg:mb-2 font-medium">
                   Fale Conosco!
                </h1>
                <span className="flex items-center gap-3 lg:text-sm text-xs">
