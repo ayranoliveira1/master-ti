@@ -43,7 +43,7 @@ const Contacts = () => {
                </Link>
             </div>
 
-            <div className="flex flex-col gap-1 mx-auto mr-7 lg:mr-0 lg:mx-0">
+            <div className="flex flex-col gap-1 mx-auto lg:mx-0">
                <h1 className="lg:text-3xl text-base font-medium">
                   Mande um E-mail <br /> Para Nossa Equipe!
                </h1>
