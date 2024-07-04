@@ -13,7 +13,7 @@ const Start = () => {
                src={"/main.png"}
                alt="Logo"
                width={150}
-               height={150}
+               height={211}
                className="object-cotain lg:hidden"
             />
 

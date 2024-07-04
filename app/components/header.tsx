@@ -16,7 +16,7 @@ const Header = () => {
                src={"/LogoMaster.png"}
                alt="Logo"
                width={50}
-               height={50}
+               height={59}
                className="object-cotain"
             />
             <p className="font-bold text-xs">
