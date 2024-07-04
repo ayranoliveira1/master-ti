@@ -16,7 +16,7 @@ const Contacts = () => {
          </h1>
 
          <div className="flex lg:flex-row flex-col gap-7 lg:gap-5 lg-gap-0 justify-center">
-            <div className="flex flex-col gap-1 lg:gap-3 mx-auto lg:mx-0 lg:mr-20 items-center">
+            <div className="flex flex-col gap-1 lg:gap-3 mx-auto lg:mx-0 lg:mr-20 lg:items-start items-center">
                <h1 className="text-base lg:text-3xl lg:mb-2 font-medium">
                   Fale Conosco!
                </h1>
@@ -45,7 +45,7 @@ const Contacts = () => {
                </Link>
             </div>
 
-            <div className="flex flex-col gap-1 mx-auto lg:mx-0 items-center">
+            <div className="flex flex-col gap-1 mx-auto lg:mx-0 lg:items-start items-center">
                <h1 className="lg:text-3xl text-base font-medium">
                   Mande um E-mail <br /> Para Nossa Equipe!
                </h1>
@@ -59,7 +59,7 @@ const Contacts = () => {
                <form
                   action={"https://formsubmit.co/mastertibr091@gmail.com"}
                   method="POST"
-                  className="flex flex-col gap-3 mt-3"
+                  className="flex flex-col gap-3 mt-3 w-full"
                >
                   <Input
                      className="bg-black border-[#292734] text-white"
