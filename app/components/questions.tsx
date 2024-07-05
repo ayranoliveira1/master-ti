@@ -18,9 +18,9 @@ const Questions = () => {
             <Accordion
                type="single"
                collapsible
-               className="text-white w-[310px] lg:w-[650px] bg-black z-50"
+               className="text-white w-[310px] lg:w-[650px] rounded-xl bg-black z-50"
             >
-               <AccordionItem value="item-1">
+               <AccordionItem value="item-1" className="">
                   <AccordionTrigger className="px-2 lg:py-5 text-sm lg:text-2xl">
                      <div className="flex gap-3 items-center text-start">
                         <FaCircle size={10} />
